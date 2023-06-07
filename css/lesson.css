@@ -1,0 +1,82 @@
+@import "./reset.css"; @font-face { font-family: 'S-CoreDream-3Light'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff'); font-weight: normal; font-style: normal; } 
+
+@font-face { font-family: 'SBAggroB'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff'); font-weight: normal; font-style: normal; } 
+
+body { background-image: url("../source/bg1.png"); background-size: cover; background-repeat: no-repeat; background-position: center; background-attachment: fixed; height: 100vh; } 
+
+header { display: flex; justify-content: space-between; align-items: center; padding: 20px 20px; } 
+
+header .top_menu { display: flex; padding-left: 0; } 
+
+header .top_menu li { font-family: 'Poppins', sans-serif; font-style: normal; font-weight: 900; padding: .5rem 1rem; font-size: .9rem; } 
+
+header .top_menu li:hover { color: #5F6FAA; } 
+
+header .point_color { color: #5F6FAA; } 
+
+.label_font { font-family: 'Abril Fatface'; font-style: normal; font-weight: 500; } 
+
+.tabs { margin-top: -2rem; margin-left: 11rem; display: flex; flex-wrap: wrap; max-width: 60rem; } 
+
+.tabs label { order: 1; display: block; padding: 1rem 2rem; margin-right: 0.2rem; cursor: pointer; background: #5F6FAA; font-weight: bold; transition: background ease 0.2s; } 
+
+.tabs .tab { order: 99; flex-grow: 1; width: 100%; display: none; padding: 1rem; background: #fff; } 
+
+.tab p {margin-top: 10px;}
+
+.tabs input[type=radio] { display: none; } 
+
+.tabs input[type=radio]:checked+label { background: #fff; } 
+
+.tabs input[type=radio]:checked+label+.tab { display: block; } 
+
+.chart { position: relative; display: inline-block; color: #999; font-size: 20px; text-align: center; top: -1rem; } 
+
+.chart figcaption { padding: 50px 50px; width: 50px; border: 20px solid #ffffff; border-radius: 100px; line-height: 50px; } 
+
+.chart img { position: absolute; max-width: 80px; max-height: 80px; } 
+
+.chart2 { width: 150px; height: 150px; top: 28px; left: 32px; } 
+
+.chart2+svg .outer { stroke: #611F5C; } 
+
+.chart svg { position: absolute; margin-top: -263px; width: 170px; height: 265px;} 
+
+.outer { position: absolute; fill: transparent; stroke-width: 20; stroke-dasharray: 534; transition: stroke-dashoffset 1s; } 
+
+.chart:hover .outer { stroke-dashoffset: 534 !important; } 
+
+.chart[data-percent='100'] .outer { stroke-dashoffset: 0; } 
+
+.chart[data-percent='75'] .outer { stroke-dashoffset: 133; } 
+
+.chart[data-percent='50'] .outer { stroke-dashoffset: 250; } 
+
+.chart[data-percent='25'] .outer { stroke-dashoffset: 401; } 
+
+.class_3 svg, .class_4 svg { margin-left: -95.5px;}
+
+.lesson_text { padding: 2rem 2rem; } 
+
+.lesson_title { position: absolute; font-family: 'SBAggroB'; font-size: 2rem; display: inline-block; margin-top: 3rem; margin-left: 2rem; color: #611F5C; } 
+
+@media (max-width: 768px){
+ .tabs { margin-top: .5rem; margin-left: 0; } 
+
+ .tabs .tab,
+ .tabs label { order: initial; } 
+
+ .tabs label { width: 100%; margin-right: 0; margin-top: 0.2rem; } 
+
+ .lesson_text img { width: 80%; } 
+ 
+ .class_1, .class_2, .class_3, .class_4 { margin-top: 64px; } 
+
+ .chart svg { height: 270px;}
+ }
+
+@media all and (min-width: 768px) { header .logo1 { width: 100px; } 
+
+ header .top_menu li { padding: 1rem 1rem; font-size: 1.7rem; } 
+ .class_1, .class_2, .class_3, .class_4 { height: 430px; } 
+ }

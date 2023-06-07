@@ -1,0 +1,105 @@
+@import "./reset.css"; @font-face { font-family: 'S-CoreDream-3Light'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff'); font-weight: normal; font-style: normal; } 
+
+@font-face { font-family: 'SBAggroB'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff'); font-weight: normal; font-style: normal; } 
+
+body { background-image: url("../source/bg1.png"); background-size: cover; background-repeat: no-repeat; background-position: center; background-attachment: fixed; height: 100vh; } 
+
+header { display: flex; justify-content: space-between; align-items: center; padding: 20px 20px; z-index: 10; } 
+
+header .top_menu { display: flex; padding-left: 0; } 
+
+header .top_menu li { font-family: 'Poppins', sans-serif; font-style: normal; font-weight: 900; padding: .5rem 1rem; font-size: .9rem; } 
+
+header .top_menu li:hover { color: #5F6FAA; } 
+
+header .point_color { color: #5F6FAA; } 
+
+.profile-card { background: #5F6FAA; position: absolute; left: 50%; top: 50%; z-index: 2; overflow: hidden; opacity: 0; margin-top: 30px; transform: translate(-50%, -50%); border-radius: 50%; box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16), 0px 3px 6px rgba(0, 0, 0, 0.23); animation: init 0.5s 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards, moveDown 1s 0.8s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards, moveUp 1s 1.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards, materia 0.5s 2.7s cubic-bezier(0.86, 0, 0.07, 1) forwards; } 
+
+.profile-card .profile-bio { position: absolute; padding-top: 5rem; padding-left: 4rem; opacity: 0; animation: moveIn 1s 3.1s ease forwards; } 
+
+.profile-card .profile-bio img { width: 75%;}
+
+.profile-card .wrap { position: relative; } 
+
+.profile-card .wrap .text1, .text2 { font-family: 'Abril Fatface'; font-style: normal; font-weight: 400; font-size: 5rem; } 
+
+.profile-card .wrap .text2 { display: inline-block;}
+
+.line1 { border: solid 1px black; width: 470px; margin-top: 1rem;}
+
+.profile-card .wrap .text3 { font-family: 'S-Core Dream'; font-style: normal; font-weight: 300; font-size: 1rem; } 
+
+.profile-social-links { width: 300px; display: inline-block; padding: 15px 0px; margin-top: 50px; text-align: center; opacity: 0; box-sizing: border-box; animation: moveIn 1s 3.1s ease forwards; } 
+
+.profile-social-links li { list-style: none; float: left; width: 25%; text-align: left; } 
+
+.profile-social-links li a { display: inline-block; color: #000000; padding: 6px; position: relative; overflow: hidden!important; border-radius: 50%; } 
+
+.profile-social-links li a i { position: relative; z-index: 1; font-size: 3rem;} 
+
+.profile-social-links li a:hover { color: #5F6FAA;}
+
+@keyframes init { 
+ 0% { width: 0px; height: 0px; } 
+ 100% { width: 56px; height: 56px; margin-top: 0px; opacity: 1; } 
+ }
+
+@keyframes moveDown { 
+ 0% { top: 50%; } 
+ 50% { top: 40%; } 
+ 100% { top: 100%; } 
+ }
+
+@keyframes moveUp { 
+ 0% { background: #5F6FAA; top: 100%; } 
+ 50% { top: 40%; } 
+ 100% { top: 50%; background: #e0e0e000; } 
+ }
+
+@keyframes materia { 
+ 0% { background: #e0e0e000; } 
+ 50% { border-radius: 4px; } 
+ 100% { width: 73rem; height: 40rem; background: #ffffff00; border-radius: 4px; margin-top: 130px; } 
+ }
+
+@keyframes moveIn { 
+ 0% { margin-top: 50px; opacity: 0; } 
+ 100% { opacity: 1; margin-top: 0px; } 
+ }
+@keyframes scaleIn { 
+ 0% { transform: scale(0); } 
+ 100% { transform: scale(1); } 
+ }
+
+@keyframes ripple { 
+ 0% { transform: scale3d(0, 0, 0); } 
+ 50%,
+ 100% { transform: scale3d(1, 1, 1); } 
+ 100% { opacity: 0; } 
+ }
+
+@media all and (min-width: 768px) { body { background-size: cover; } 
+ header .logo1 { width: 100px; } 
+
+ header .top_menu li { padding: 1rem 1rem; font-size: 1.7rem; } 
+
+.profile-card .wrap {float: right; text-align: left; margin-top: 9rem; margin-right: 2rem;} 
+
+.profile-card .wrap .star { display: inline-block; margin-left: .5rem;}
+
+.profile-card .wrap .text3 { margin-top: 2rem;}
+
+.profile-social-links { margin-left: -5px;}
+ }
+
+@media all and (max-width: 900px){
+.profile-card .profile-bio {margin-left: 4rem; padding-top: 2rem;}
+.profile-card .wrap { margin-top: 20rem; text-align: center; }
+.profile-card .wrap .text3 {font-size: 15px; margin-top: 1rem;}
+ @keyframes materia { 
+ 0% { background: #e0e0e000; } 
+ 50% { border-radius: 4px; } 
+ 100% { width: 30rem; height: 53rem; background: #ffffff00; border-radius: 4px; margin-top: 250px; } 
+ } 
+ }

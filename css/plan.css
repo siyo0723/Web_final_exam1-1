@@ -1,0 +1,52 @@
+@import "./reset.css";
+
+@font-face { font-family: 'S-CoreDream-3Light'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff'); font-weight: normal; font-style: normal; } 
+
+body { background-image: url("../source/bg1.png"); background-size: cover; background-repeat: no-repeat; background-position: center; background-attachment: fixed; height: 100vh; } 
+
+h1 { text-align: center; font-weight: 300; color: #000000; font-family: 'Abril Fatface'; font-size: 3rem; margin-top: 3s0px; } 
+
+h3 { font-family: 'Abril Fatface'; color: #000000; } 
+
+/* header */
+header { display: flex; justify-content: space-between; align-items: center; padding: 20px 20px; } 
+header .top_menu { display: flex; padding-left: 0; } 
+header .top_menu li { font-family: 'Poppins', sans-serif; font-style: normal; font-weight: 900; padding: .5rem 1rem; font-size: .9rem; } 
+header .top_menu li:hover { color: #5F6FAA; } 
+header .point_color { color: #5F6FAA;}
+
+.container { width: 80%; padding: 50px 0; margin: 50px auto; position: relative; overflow: hidden; } 
+
+.container:before { content: ''; position: absolute; top: 0; left: 50%; margin-left: -1px; width: 2px; height: 100%; background: #5F6FAA; z-index: 1 } 
+
+.timeline-block { width: -webkit-calc(50% + 8px); width: -moz-calc(50% + 8px); width: calc(50% + 8px); display: -webkit-box; display: -webkit-flex; display: -moz-box; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -moz-box-pack: justify; justify-content: space-between; clear: both; } 
+
+.timeline-block-right { float: right; } 
+
+.timeline-block-left { float: left; direction: rtl } 
+
+.marker { width: 16px; height: 16px; border-radius: 50%; border: 2px solid #000000; background: #5F6FAA; margin-top: 10px; z-index: 9999 } 
+
+.timeline-content { width: 95%; padding: 0 15px; color: #ffffff } 
+
+.timeline-content h3 { margin-top: 5px; margin-bottom: 5px; font-size: 25px; font-weight: 500 } 
+
+.timeline-content span { font-size: 15px; font-weight: 900; color: #5F6FAA; font-family: 'S-CoreDream-3Light'; } 
+
+.timeline-content p { font-size: 14px; line-height: 1.5em; word-spacing: 1px; color: #000000; } 
+
+@media all and (min-width: 768px){
+    header .logo1 { width: 100px; } 
+
+    header .top_menu li { padding: 1rem 1rem; font-size: 1.7rem; } 
+ }
+
+@media all and (max-width: 768px){
+    .container:before { left: 8px; width: 2px; } 
+
+    .timeline-block { width: 100%; margin-bottom: 30px; } 
+   
+    .timeline-block-right { float: none; } 
+   
+    .timeline-block-left { float: none; direction: ltr; } 
+ }

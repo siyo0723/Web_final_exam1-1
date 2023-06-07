@@ -1,0 +1,90 @@
+@import "./reset.css"; @font-face { font-family: 'S-CoreDream-3Light'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff'); font-weight: normal; font-style: normal; } 
+
+body { background-image: url("../source/bg1.png"); background-size: cover; background-repeat: no-repeat; background-position: center; background-attachment: fixed; height: 100vh; } 
+
+/* header */
+header { display: flex; justify-content: space-between; align-items: center; padding: 20px 20px; } 
+header .top_menu { display: flex; padding-left: 0; } 
+header .top_menu li { font-family: 'Poppins', sans-serif; font-style: normal; font-weight: 900; padding: .5rem 1rem; font-size: .9rem; } 
+header .top_menu li:hover { color: #5F6FAA; } 
+
+/* main content */
+.main_content {height: 700px;}
+.left_content { position: relative; } 
+.left_content .main_name { position: absolute; padding: 0rem 6rem; } 
+.left_content .line1 { position: absolute; border: 1px solid #000000; width: 277px; margin: 220px 6rem; } 
+.left_content .main_text1 { position: absolute; font-family: 'S-CoreDream-3Light'; font-style: normal; font-weight: 300; margin: 240px 6rem; line-height: 2rem; } 
+.left_content .motto { position: absolute;} 
+
+.ani_text1 span:nth-of-type(1) { -webkit-animation-delay: 0s; animation-delay: 0s; } 
+.ani_text1 span:nth-of-type(2) { -webkit-animation-delay: 0.1s; animation-delay: 0.1s; } 
+.ani_text1 span:nth-of-type(3) { -webkit-animation-delay: 0.2s; animation-delay: 0.2s; } 
+.ani_text1 span:nth-of-type(4) { -webkit-animation-delay: 0.3s; animation-delay: 0.3s; } 
+.ani_text1 span:nth-of-type(5) { -webkit-animation-delay: 0.4s; animation-delay: 0.4s; } 
+.ani_text1 span:nth-of-type(6) { -webkit-animation-delay: 0.5s; animation-delay: 0.5s; } 
+.ani_text1 span:nth-of-type(7) { -webkit-animation-delay: 0.6s; animation-delay: 0.6s; } 
+.ani_text1 span:nth-of-type(8) { -webkit-animation-delay: 0.7s; animation-delay: 0.7s; } 
+.ani_text1 span:nth-of-type(9) { -webkit-animation-delay: 0s; animation-delay: 0s; } 
+.ani_text1 span:nth-of-type(10) { -webkit-animation-delay: 0.1s; animation-delay: 0.1s; } 
+.ani_text1 span:nth-of-type(11) { -webkit-animation-delay: 0.2s; animation-delay: 0.2s; } 
+.ani_text1 span:nth-of-type(12) { -webkit-animation-delay: 0.3s; animation-delay: 0.3s; } 
+.ani_text1 span:nth-of-type(13) { -webkit-animation-delay: 0.4s; animation-delay: 0.4s; } 
+.ani_text1 span:nth-of-type(14) { -webkit-animation-delay: 0.5s; animation-delay: 0.5s; } 
+.ani_text1 span:nth-of-type(15) { -webkit-animation-delay: 0.6s; animation-delay: 0.6s; } 
+.ani_text1 span:nth-of-type(16) { -webkit-animation-delay: 0.7s; animation-delay: 0.7s; } 
+.ani_text1 span:nth-of-type(17) { -webkit-animation-delay: 0s; animation-delay: 0s; } 
+.ani_text1 span:nth-of-type(18) { -webkit-animation-delay: 0.1s; animation-delay: 0.1s; } 
+.ani_text1 span:nth-of-type(19) { -webkit-animation-delay: 0.2s; animation-delay: 0.2s; } 
+.ani_text1 span:nth-of-type(20) { -webkit-animation-delay: 0.3s; animation-delay: 0.3s; } 
+.ani_text1 span:nth-of-type(21) { -webkit-animation-delay: 0.4s; animation-delay: 0.4s; } 
+.ani_text1 span:nth-of-type(22) { -webkit-animation-delay: 0.5s; animation-delay: 0.5s; } 
+.ani_text1 span:nth-of-type(23) { -webkit-animation-delay: 0.6s; animation-delay: 0.6s; } 
+.ani_text1 span:nth-of-type(24) { -webkit-animation-delay: 0.7s; animation-delay: 0.7s; } 
+.ani_text1 span:nth-of-type(25) { -webkit-animation-delay: 0s; animation-delay: 0s; } 
+.ani_text1 span:nth-of-type(26) { -webkit-animation-delay: 0.1s; animation-delay: 0.1s; } 
+.ani_text1 span:nth-of-type(27) { -webkit-animation-delay: 0.2s; animation-delay: 0.2s; } 
+.ani_text1 span:nth-of-type(28) { -webkit-animation-delay: 0.3s; animation-delay: 0.3s; } 
+.ani_text1 span:nth-of-type(29) { -webkit-animation-delay: 0.4s; animation-delay: 0.4s; } 
+
+@-webkit-keyframes wave-text { 00% { transform: translateY(0em); } 
+
+ 60% { transform: translateY(-0.4em); } 
+
+ 100% { transform: translateY(0em); } 
+ }
+
+@keyframes wave-text { 00% { transform: translateY(0em); } 
+
+ 60% { transform: translateY(-0.4em); } 
+
+ 100% { transform: translateY(0em); } 
+ }
+
+ .ani_text1 span { display: inline-block; -webkit-animation: wave-text 1s ease-in-out infinite; animation: wave-text 1s ease-in-out infinite; } 
+ .ani_text1 { position: absolute; display: flex; font-size: 1.2em; font-family: 'S-CoreDream-3Light'; font-weight: 600; font-style: normal; left: 150px; margin-top: .5rem; } 
+
+ .pole_img1 { position: absolute;}
+
+footer { text-align: left; margin-left: 6rem; height: 50px; font-size: 1rem; font-family: 'S-CoreDream-3Light'; font-style: normal; font-weight: 500; line-height: 1.4rem;}
+
+@media all and (min-width: 768px) { 
+    header .logo1 { width: 100px;}
+    header .top_menu li { padding: 1rem 1rem; font-size: 1.7rem;}
+
+    .main_name img{ width: 100%;}
+    .motto { width: 60%;}
+    .main_text1 { font-size: 1.2rem;}
+    .pole_img1 { right: 2rem; padding-top: 3rem;}
+    .motto { margin: 360px 4rem; }
+}
+
+@media all and (max-width: 768px) {
+    .main_name img { width: 50%; margin-top: 100px;}
+    .main_text1 { font-size: 0.9rem; }
+    .pole_img1 { padding-top: 5rem;}
+    .pole_img1 img { width: 80%;}
+    .left_content { top: 400px;}
+    .ani_text1 { opacity: 0;}
+    .motto { width: 60%; margin: 420px 7rem; }
+    footer { font-size: .9rem; margin-top: 15rem;}
+}
